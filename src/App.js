@@ -6,7 +6,6 @@ import Weather from './components/Weather';
 const API_KEY = "75597c0db16a43b8844163342202704";
 
 class App extends React.Component {
-
   state = {
     temperature: undefined,
     city: undefined,
