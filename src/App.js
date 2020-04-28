@@ -19,7 +19,7 @@ class App extends React.Component {
     e.preventDefault();
     const city = e.target.elements.city.value;
     const country = e.target.elements.country.value;
-    const api_call = await fetch(`http://api.weatherapi.com/v1/current.json?key=${API_KEY}&q=${city},${country}`);
+    const api_call = await fetch(`https://api.weatherapi.com/v1/current.json?key=${API_KEY}&q=${city},${country}`);
     const data = await api_call.json();
     if (city && country) {
       this.setState({
